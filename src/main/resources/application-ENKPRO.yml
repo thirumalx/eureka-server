@@ -1,0 +1,20 @@
+---
+# The default profile (Available in application.properties) is used when running a single instance completely standalone:
+# primary, secondary, and tertiary are running 3 intercommunicating instances.  
+# Run by opening 3 separate command prompts:
+# java -jar -Dspring.profiles.active=DEV-PRIMARY eureka-server-0.0.1-SNAPSHOT.jar
+# java -jar -Dspring.profiles.active=DEV-SECONDARY eureka-server-0.0.1-SNAPSHOT.jar
+# java -jar -Dspring.profiles.active=DEV-TERTIARY eureka-server-0.0.1-SNAPSHOT.jar
+
+spring:   
+#  profiles: DEV-PRIMARY
+  config: 
+    activate.on-profile: ENKPRO-PRIMARY
+  application:
+    name: eureka-server-clustered-1 
+server:
+  port: 8761  
+eureka: 
+  instance:
+    hostname: 172.31.17.33
+    ipAddress: ${eureka.instance.hostname}         
