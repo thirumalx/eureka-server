@@ -32,11 +32,11 @@ spring:
 
 spring: 
   config: 
-    activate.on-profile: SBA,PRO-PRIMARY,PRO-SECONDARY,PRO-TERTIARY 
+    activate.on-profile: SBA,PRO-PRIMARY,PRO-SECONDARY,PRO-TERTIARY,ENKPRO-PRIMARY
   zipkin:
      base-url: http://172.19.250.8:9411 
   boot:
     admin:
       client:
         instance:
-          service-base-url: http://172.19.250.8:7126
+          service-base-url: http://localhost:7126
