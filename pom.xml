@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.5.0</version>
+		<version>4.0.6</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>in.thirumal</groupId>
@@ -31,8 +31,8 @@
 		<url />
 	</scm>
 	<properties>
-		<java.version>21</java.version>
-		<spring-cloud.version>2025.0.0-RC1</spring-cloud.version>
+		<java.version>25</java.version>
+		<spring-cloud.version>2025.1.1</spring-cloud.version>
 	</properties>
 
 	<dependencies>
